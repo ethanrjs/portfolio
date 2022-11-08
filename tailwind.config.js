@@ -9,6 +9,14 @@ module.exports = {
     extend: {
       // slide in
       keyframes: {
+        'typeIn': {
+          '0%': {
+            width: 0
+          },
+          '100%': {
+            width: '100%'
+          }
+        },
         'slide-and-fade-in': {
           '0%': {
             opacity: 0,
@@ -68,6 +76,7 @@ module.exports = {
         'slide-from-left': 'slide-from-left 0.7s ease-in-out',
         'slide-from-right': 'slide-from-right 0.9s ease-in-out',
         type: 'type 1.8s ease-out .8s 1 normal both',
+        typeIn: 'typeIn 0.7s ease-in-out forwards',
         hoverspin: 'hoverspin 1s ease',
       },
     },
