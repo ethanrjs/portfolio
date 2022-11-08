@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "npx tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "ethanrettinger",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss-animation-delay": "^1.0.7"
+  },
+  "devDependencies": {
+    "tailwind-scrollbar": "^2.0.1"
+  }
+}

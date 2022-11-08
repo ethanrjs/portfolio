@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethan Rettinger</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/0160890b48.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/index.js"></script>
+  </head>
+  <body class="antialiased bg-black overflow-x-hidden h-[150vh] scroll-smooth scrollbar-thumb-white scrollbar-track-gray-900 scrollbar-thin ">
+    <div
+      class="blur-3xl bg-purple-700 w-80 h-80 opacity-25 absolute rounded-full top-1/2 left-1/2 transform -translate-x-1/4 -translate-y-1/7"
+    ></div>
+    <!-- blue circle -->
+    <div
+      class="blur-3xl bg-blue-700 w-96 h-96 opacity-25 absolute rounded-full top-1/4 left-1/4 transform -translate-x-1/4 -translate-y-1/7"
+    ></div>
+    <!-- green circle -->
+    <div
+      class="blur-3xl bg-red-700 w-96 h-96 opacity-25 absolute rounded-full -top-1/4 right-1/4 transform -translate-x-1/5 -translate-y-1/9"
+    ></div>
+    <section id="hero">
+      <nav
+        class="relative container mx-auto border-b border-blue-400 border-opacity-40 p-4 backdrop-blur-md"
+      >
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center animate-slide-from-left">
+            <a
+              href="index.html"
+              class="text-2xl font-medium text-white hover:animate-pulse hover:text-blue-400"
+              >Ethan Rettinger</a
+            >
+          </div>
+          <!-- Navigation -->
+          <div class="flex items-center animate-slide-from-right">
+            <a
+              href="index.html"
+              class="text-lg font-medium text-white hover:animate-pulse hover:text-blue-400"
+              >Home</a
+            >
+            <a
+              href="about.html"
+              class="text-lg font-medium text-white ml-4 hover:animate-pulse hover:text-blue-400"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="text-lg font-medium text-white ml-4 hover:animate-pulse hover:text-blue-400"
+              >Contact</a
+            >
+            <!-- hamburger icon -->
+            <i
+              id="hamburgerIcon"
+              class="fa-solid fa-bars text-white ml-4 hover:animate-hoverspin hover:text-blue-400 hover:cursor-pointer"
+            ></i>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- hamburger menu-->
+
+    <!-- create circle and make it fuzzy -->
+    <div class="relative container mx-auto mt-20">
+      <div class="text-center">
+        <!-- slide in -->
+        <div class="animate-slide-and-fade-in">
+          <h1 class="text-6xl font-medium text-white">Ethan Rettinger</h1>
+          <h2 class="text-2xl font-medium text-white">Web Developer</h2>
+        </div>
+      </div>
+    </div>
+
+    
+    <section id="projects">
+      <div class="relative container mx-auto mt-20">
+        <div class="text-center">
+          <h1
+            class="text-6xl font-medium text-white animate-slide-and-fade-in opacity-0 animation-delay-600"
+          >
+            My Projects
+          </h1>
+        </div>
+        <div
+          id="projects"
+          class="flex container mx-auto mt-10 flex-row justify-around"
+        >
+          <div
+            id="ETHIX"
+            class="group projects border border-white h-[20rem] w-[20rem] opacity-0 animate-slide-and-fade-in animation-delay-700 backdrop-blur-lg hover:bg-white hover:duration-200 cursor-pointer"
+          >
+            <p class="text-center text-4xl font-mono h-full w-full flex items-center justify-center text-white group-hover:text-black">
+                ETHIX
+            </p>
+          </div>
+          <div
+            id="ITCHATROOM"
+            class="group projects border border-white h-[20rem] w-[20rem] opacity-0 animate-slide-and-fade-in animation-delay-800 backdrop-blur-lg hover:bg-white hover:duration-200 cursor-pointer"
+          >
+            <p class="text-center text-4xl font-mono h-full w-full flex items-center justify-center text-white group-hover:text-black">
+              IT ACADEMY CHATROOM
+            </p>
+          </div>
+          <div
+            id="PORTFOLIO"
+            class="group projects border border-white h-[20rem] w-[20rem] opacity-0 animate-slide-and-fade-in animation-delay-900 backdrop-blur-lg hover:bg-white hover:duration-200 cursor-pointer"
+          >
+            <p class=" text-center text-4xl font-mono h-full w-full flex items-center justify-center text-white group-hover:text-black">
+                PORTFOLIO
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="hamburger-menu" class="hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-md">
+            <div class="flex flex-row items-center justify-center h-full gap-20">
+                <a href="index.html"
+                    class="text-4xl font-medium text-white hover:animate-pulse hover:text-blue-400">Home</a>
+                <a href="projects.html" class="text-4xl font-medium text-white hover:animate-pulse hover:text-blue-400">My
+                    Projects</a>
+                <a href="education.html"
+                    class="text-4xl font-medium text-white hover:animate-pulse hover:text-blue-400">Education</a>
+            </div>
+        </div>
+        <!-- exit button-->
+        <div class="absolute top-0 right-0 mr-20 mt-20">
+            <i id="exitIcon"
+                class="fa-solid fa-times text-red-400 hover:animate-pulse hover:text-red-700 hover:cursor-pointer text-2xl"></i>
+        </div>
+    </section>
+  </body>
+</html>
